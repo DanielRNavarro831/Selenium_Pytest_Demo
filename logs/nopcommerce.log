@@ -592,3 +592,6 @@ n Login Page - Test 2 Invalid Username ******************
 2025-09-17 16:00:21:INFO: * Home Page::Change Currency to Euro::Test Passed
 2025-09-17 16:01:52:INFO: * Home Page::Change Currency to Dollar::Test Passed
 2025-09-17 16:11:21:INFO: * Home Page::Search For Items::Test Passed
+2025-09-18 12:27:40:INFO: * Home Page::Computers Desktops Submenu::Test Passed
+2025-09-18 12:28:41:INFO: * Home Page::Computers Notebooks Submenu::Test Passed
+2025-09-18 12:29:07:INFO: * Home Page::Computers Software Submenu::Test Passed

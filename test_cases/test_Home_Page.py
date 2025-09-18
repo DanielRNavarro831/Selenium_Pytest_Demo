@@ -3,6 +3,7 @@ import pytest
 from selenium import webdriver
 from base_pages.Home_Page import HomePage
 from base_pages.Search_Page import SearchPage
+from base_pages.Shop_By_Category import ShopByCategory
 from utilities.logger import Logger
 from selenium.webdriver.common.by import By
 
@@ -72,11 +73,56 @@ class TestHomePage:
             self.driver.close()
             assert False
 
-    def test_computers_submenu(self, setup):
+    def test_computers_desktops(self, setup):
+        self.driver = setup
+        self.get_page_maximize_window()
+        home_page = HomePage(self.driver)
+        time.sleep(1)
+        home_page.click_computers("Desktops")
+        time.sleep(3)
+        shop_page = ShopByCategory(self.driver)
+        category_header = shop_page.get_category_header()
+        if category_header == "Desktops":
+            assert True
+            self.logger.info(" * Home Page::Computers Desktops Submenu::Test Passed")
+            self.driver.close()
+        else:
+            self.logger.info(" ! Home Page::Computers Desktops Submenu::Test Failed")
+            self.driver.close()
+            assert False
+
+    def test_computers_notebooks(self, setup):
         self.driver = setup
         self.get_page_maximize_window()
         home_page = HomePage(self.driver)
         time.sleep(1)
         home_page.click_computers("Notebooks")
         time.sleep(3)
-        self.driver.close()
+        shop_page = ShopByCategory(self.driver)
+        category_header = shop_page.get_category_header()
+        if category_header == "Notebooks":
+            assert True
+            self.logger.info(" * Home Page::Computers Notebooks Submenu::Test Passed")
+            self.driver.close()
+        else:
+            self.logger.info(" ! Home Page::Computers Notebooks Submenu::Test Failed")
+            self.driver.close()
+            assert False
+
+    def test_computers_software(self, setup):
+        self.driver = setup
+        self.get_page_maximize_window()
+        home_page = HomePage(self.driver)
+        time.sleep(1)
+        home_page.click_computers("Software")
+        time.sleep(3)
+        shop_page = ShopByCategory(self.driver)
+        category_header = shop_page.get_category_header()
+        if category_header == "Software":
+            assert True
+            self.logger.info(" * Home Page::Computers Software Submenu::Test Passed")
+            self.driver.close()
+        else:
+            self.logger.info(" ! Home Page::Computers Software Submenu::Test Failed")
+            self.driver.close()
+            assert False
