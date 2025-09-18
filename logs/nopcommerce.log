@@ -1,0 +1,594 @@
+2025-09-16 15:06:06:INFO:****************** Test 01 Page Title ******************
+2025-09-16 15:06:06:INFO: * Step 1: Getting URL
+2025-09-16 15:06:07:INFO: * Step 2: Getting page title of current URL
+2025-09-16 15:06:07:INFO: * Step 3: Comparing page title to expected title
+2025-09-16 15:06:07:INFO: Test Passed
+2025-09-16 15:39:46:INFO:****************** Admin Login Page - Test 1 Page Title ******************
+2025-09-16 15:39:46:INFO: * Step 1: Getting URL
+2025-09-16 15:39:47:INFO: * Step 2: Getting page title of current URL
+2025-09-16 15:39:47:INFO: * Step 3: Comparing page title to expected title
+2025-09-16 15:39:47:INFO: * Test Passed
+2025-09-16 15:52:37:INFO:****************** Admin Login Page - Test 1 Page Title ******************
+2025-09-16 15:52:37:INFO: * Step 1: Getting URL
+2025-09-16 15:52:37:INFO: * Step 2: Getting page title of current URL
+2025-09-16 15:52:37:INFO: * Step 3: Comparing page title to expected title
+2025-09-16 15:52:37:INFO: * Test Passed
+2025-09-16 15:52:39:INFO:****************** Admin Login Page - Test 1 Invalid Username ******************
+2025-09-16 15:52:39:INFO: * Step 1: Getting URL
+2025-09-16 15:52:39:INFO: * Step 2: Entering invalid username
+2025-09-16 15:52:39:INFO: * Step 3: Entering valid password
+2025-09-16 15:52:40:INFO: * Step 4: Clicking login button
+2025-09-16 15:52:43:INFO: * Step 5: Verifying presence of error message
+2025-09-16 15:52:43:INFO: * Step 6: Comparing error text with expected text
+2025-09-16 15:52:43:INFO: * Test Passed
+2025-09-16 15:52:44:INFO:****************** Admin Login Page - Test 1 Invalid Password ******************
+2025-09-16 15:52:44:INFO: * Step 1: Getting URL
+2025-09-16 15:52:45:INFO: * Step 2: Entering valid username
+2025-09-16 15:52:45:INFO: * Step 3: Entering invalid password
+2025-09-16 15:52:45:INFO: * Step 4: Clicking login button
+2025-09-16 15:52:48:INFO: * Step 5: Verifying presence of error message
+2025-09-16 15:52:48:INFO: * Step 6: Comparing error text with expected text
+2025-09-16 15:52:48:INFO: * Test Passed
+2025-09-16 15:52:49:INFO:****************** Admin Login Page - Test 1 Valid Login ******************
+2025-09-16 15:52:49:INFO: * Step 1: Getting URL
+2025-09-16 15:52:50:INFO: * Step 2: Entering valid username
+2025-09-16 15:52:50:INFO: * Step 3: Entering valid password
+2025-09-16 15:52:50:INFO: * Step 4: Clicking login button
+2025-09-16 15:52:54:INFO: * Step 5: Getting page title of current URL
+2025-09-16 15:52:54:INFO: * Step 6: Comparing page title to expected title
+2025-09-16 15:52:54:INFO: * Test Passed
+2025-09-16 15:52:55:INFO:****************** Admin Login Page - Test 1 Reveal Password ******************
+2025-09-16 15:52:55:INFO: * Step 1: Getting URL
+2025-09-16 15:52:56:INFO: * Step 2: Entering valid password
+2025-09-16 15:52:56:INFO: * Step 3: Clicking password eye
+2025-09-16 15:52:56:INFO: * Step 4: Verifying text in password field
+2025-09-16 15:52:57:INFO: * Test Passed
+2025-09-16 15:52:58:INFO:****************** Admin Login Page - Test 1 Hide Password ******************
+2025-09-16 15:52:58:INFO: * Step 1: Getting URL
+2025-09-16 15:52:58:INFO: * Step 2: Entering valid password
+2025-09-16 15:53:01:INFO: * Step 3: Clicking password eye: Reveal
+2025-09-16 15:53:03:INFO: * Step 4: Clicking password eye: Hide
+2025-09-16 15:53:05:INFO: * Step 5: Verifying hidden text in password field
+2025-09-16 15:53:05:INFO: * Test Passed
+2025-09-16 15:53:06:INFO:****************** Admin Login Page - Test 1 Remember Me ******************
+2025-09-16 15:53:06:INFO: * Step 1: Getting URL
+2025-09-16 15:53:07:INFO: * Step 2: Entering valid username
+2025-09-16 15:53:07:INFO: * Step 3: Entering valid password
+2025-09-16 15:53:07:INFO: * Step 4: Checking Remember Me box
+2025-09-16 15:53:07:INFO: * Step 5: Clicking login button
+2025-09-16 15:53:10:INFO: * Step 6: Logging out of Admin Dashboard
+2025-09-16 15:53:14:INFO: * Step 7: Verifying username in username field
+2025-09-16 15:53:14:INFO: * Test Passed
+2025-09-16 15:55:51:INFO:****************** Admin Login Page - Test 1 Page Title ******************
+2025-09-16 15:55:51:INFO: * Step 1: Getting URL
+2025-09-16 15:55:52:INFO: * Step 2: Getting page title of current URL
+2025-09-16 15:55:52:INFO: * Step 3: Comparing page title to expected title
+2025-09-16 15:55:52:INFO: * Test Passed
+2025-09-16 15:55:53:INFO:****************** Admin Login Page - Test 2 Invalid Username ******************
+2025-09-16 15:55:53:INFO: * Step 1: Getting URL
+2025-09-16 15:55:54:INFO: * Step 2: Entering invalid username
+2025-09-16 15:55:54:INFO: * Step 3: Entering valid password
+2025-09-16 15:55:54:INFO: * Step 4: Clicking login button
+2025-09-16 15:55:57:INFO: * Step 5: Verifying presence of error message
+2025-09-16 15:55:57:INFO: * Step 6: Comparing error text with expected text
+2025-09-16 15:55:57:INFO: * Test Passed
+2025-09-16 15:55:58:INFO:****************** Admin Login Page - Test 3 Invalid Password ******************
+2025-09-16 15:55:58:INFO: * Step 1: Getting URL
+2025-09-16 15:55:59:INFO: * Step 2: Entering valid username
+2025-09-16 15:55:59:INFO: * Step 3: Entering invalid password
+2025-09-16 15:55:59:INFO: * Step 4: Clicking login button
+2025-09-16 15:56:02:INFO: * Step 5: Verifying presence of error message
+2025-09-16 15:56:03:INFO: * Step 6: Comparing error text with expected text
+2025-09-16 15:56:03:INFO: * Test Passed
+2025-09-16 15:56:04:INFO:****************** Admin Login Page - Test 4 Valid Login ******************
+2025-09-16 15:56:04:INFO: * Step 1: Getting URL
+2025-09-16 15:56:04:INFO: * Step 2: Entering valid username
+2025-09-16 15:56:04:INFO: * Step 3: Entering valid password
+2025-09-16 15:56:04:INFO: * Step 4: Clicking login button
+2025-09-16 15:56:08:INFO: * Step 5: Getting page title of current URL
+2025-09-16 15:56:08:INFO: * Step 6: Comparing page title to expected title
+2025-09-16 15:56:08:INFO: * Test Passed
+2025-09-16 15:56:09:INFO:****************** Admin Login Page - Test 5 Reveal Password ******************
+2025-09-16 15:56:09:INFO: * Step 1: Getting URL
+2025-09-16 15:56:09:INFO: * Step 2: Entering valid password
+2025-09-16 15:56:10:INFO: * Step 3: Clicking password eye
+2025-09-16 15:56:10:INFO: * Step 4: Verifying text in password field
+2025-09-16 15:56:10:INFO: * Test Passed
+2025-09-16 15:56:11:INFO:****************** Admin Login Page - Test 6 Hide Password ******************
+2025-09-16 15:56:11:INFO: * Step 1: Getting URL
+2025-09-16 15:56:12:INFO: * Step 2: Entering valid password
+2025-09-16 15:56:14:INFO: * Step 3: Clicking password eye: Reveal
+2025-09-16 15:56:16:INFO: * Step 4: Clicking password eye: Hide
+2025-09-16 15:56:18:INFO: * Step 5: Verifying hidden text in password field
+2025-09-16 15:56:18:INFO: * Test Passed
+2025-09-16 15:56:19:INFO:****************** Admin Login Page - Test 7 Remember Me ******************
+2025-09-16 15:56:19:INFO: * Step 1: Getting URL
+2025-09-16 15:56:20:INFO: * Step 2: Entering valid username
+2025-09-16 15:56:20:INFO: * Step 3: Entering valid password
+2025-09-16 15:56:20:INFO: * Step 4: Checking Remember Me box
+2025-09-16 15:56:20:INFO: * Step 5: Clicking login button
+2025-09-16 15:56:23:INFO: * Step 6: Logging out of Admin Dashboard
+2025-09-16 15:56:27:INFO: * Step 7: Verifying username in username field
+2025-09-16 15:56:27:INFO: * Test Passed
+2025-09-16 16:02:54:INFO:************************************************************ Beginging Test Run************************************************************
+2025-09-16 16:03:02:INFO: ****************** Admin Login Page - Test 1 Page Title ******************
+2025-09-16 16:03:02:INFO: * Step 1: Getting URL
+2025-09-16 16:03:03:INFO: * Step 2: Getting page title of current URL
+2025-09-16 16:03:03:INFO: * Step 3: Comparing page title to expected title
+2025-09-16 16:03:03:INFO: * Test Passed
+2025-09-16 16:03:04:INFO: ****************** Admin Login Page - Test 2 Invalid Username ******************
+2025-09-16 16:03:04:INFO: * Step 1: Getting URL
+2025-09-16 16:03:05:INFO: * Step 2: Entering invalid username
+2025-09-16 16:03:05:INFO: * Step 3: Entering valid password
+2025-09-16 16:03:05:INFO: * Step 4: Clicking login button
+2025-09-16 16:03:08:INFO: * Step 5: Verifying presence of error message
+2025-09-16 16:03:08:INFO: * Step 6: Comparing error text with expected text
+2025-09-16 16:03:08:INFO: * Test Passed
+2025-09-16 16:03:09:INFO: ****************** Admin Login Page - Test 3 Invalid Password ******************
+2025-09-16 16:03:09:INFO: * Step 1: Getting URL
+2025-09-16 16:03:10:INFO: * Step 2: Entering valid username
+2025-09-16 16:03:10:INFO: * Step 3: Entering invalid password
+2025-09-16 16:03:10:INFO: * Step 4: Clicking login button
+2025-09-16 16:03:13:INFO: * Step 5: Verifying presence of error message
+2025-09-16 16:03:13:INFO: * Step 6: Comparing error text with expected text
+2025-09-16 16:03:13:INFO: * Test Passed
+2025-09-16 16:03:15:INFO: ****************** Admin Login Page - Test 4 Valid Login ******************
+2025-09-16 16:03:15:INFO: * Step 1: Getting URL
+2025-09-16 16:03:15:INFO: * Step 2: Entering valid username
+2025-09-16 16:03:15:INFO: * Step 3: Entering valid password
+2025-09-16 16:03:15:INFO: * Step 4: Clicking login button
+2025-09-16 16:03:19:INFO: * Step 5: Getting page title of current URL
+2025-09-16 16:03:19:INFO: * Step 6: Comparing page title to expected title
+2025-09-16 16:03:19:INFO: * Test Passed
+2025-09-16 16:03:20:INFO: ****************** Admin Login Page - Test 5 Reveal Password ******************
+2025-09-16 16:03:20:INFO: * Step 1: Getting URL
+2025-09-16 16:03:20:INFO: * Step 2: Entering valid password
+2025-09-16 16:03:21:INFO: * Step 3: Clicking password eye
+2025-09-16 16:03:21:INFO: * Step 4: Verifying text in password field
+2025-09-16 16:03:21:INFO: * Test Passed
+2025-09-16 16:03:22:INFO: ****************** Admin Login Page - Test 6 Hide Password ******************
+2025-09-16 16:03:22:INFO: * Step 1: Getting URL
+2025-09-16 16:03:22:INFO: * Step 2: Entering valid password
+2025-09-16 16:03:24:INFO: * Step 3: Clicking password eye: Reveal
+2025-09-16 16:03:26:INFO: * Step 4: Clicking password eye: Hide
+2025-09-16 16:03:29:INFO: * Step 5: Verifying hidden text in password field
+2025-09-16 16:03:29:INFO: * Test Passed
+2025-09-16 16:03:30:INFO: ****************** Admin Login Page - Test 7 Remember Me ******************
+2025-09-16 16:03:30:INFO: * Step 1: Getting URL
+2025-09-16 16:03:31:INFO: * Step 2: Entering valid username
+2025-09-16 16:03:31:INFO: * Step 3: Entering valid password
+2025-09-16 16:03:31:INFO: * Step 4: Checking Remember Me box
+2025-09-16 16:03:31:INFO: * Step 5: Clicking login button
+2025-09-16 16:03:34:INFO: * Step 6: Logging out of Admin Dashboard
+2025-09-16 16:03:38:INFO: * Step 7: Verifying username in username field
+2025-09-16 16:03:38:INFO: * Test Passed
+2025-09-16 16:04:46:INFO:************************************************************
+ Beginging Test Run
+************************************************************
+2025-09-16 16:04:54:INFO: ****************** Admin Login Page - Test 1 Page Title ******************
+2025-09-16 16:04:54:INFO: * Step 1: Getting URL
+2025-09-16 16:04:54:INFO: * Step 2: Getting page title of current URL
+2025-09-16 16:04:54:INFO: * Step 3: Comparing page title to expected title
+2025-09-16 16:04:54:INFO: * Test Passed
+2025-09-16 16:04:56:INFO: ****************** Admin Login Page - Test 2 Invalid Username ******************
+2025-09-16 16:04:56:INFO: * Step 1: Getting URL
+2025-09-16 16:04:57:INFO: * Step 2: Entering invalid username
+2025-09-16 16:04:57:INFO: * Step 3: Entering valid password
+2025-09-16 16:04:57:INFO: * Step 4: Clicking login button
+2025-09-16 16:05:01:INFO: * Step 5: Verifying presence of error message
+2025-09-16 16:05:01:INFO: * Step 6: Comparing error text with expected text
+2025-09-16 16:05:01:INFO: * Test Passed
+2025-09-16 16:05:02:INFO: ****************** Admin Login Page - Test 3 Invalid Password ******************
+2025-09-16 16:05:02:INFO: * Step 1: Getting URL
+2025-09-16 16:05:02:INFO: * Step 2: Entering valid username
+2025-09-16 16:05:03:INFO: * Step 3: Entering invalid password
+2025-09-16 16:05:03:INFO: * Step 4: Clicking login button
+2025-09-16 16:05:06:INFO: * Step 5: Verifying presence of error message
+2025-09-16 16:05:06:INFO: * Step 6: Comparing error text with expected text
+2025-09-16 16:05:06:INFO: * Test Passed
+2025-09-16 16:05:07:INFO: ****************** Admin Login Page - Test 4 Valid Login ******************
+2025-09-16 16:05:07:INFO: * Step 1: Getting URL
+2025-09-16 16:05:08:INFO: * Step 2: Entering valid username
+2025-09-16 16:05:08:INFO: * Step 3: Entering valid password
+2025-09-16 16:05:08:INFO: * Step 4: Clicking login button
+2025-09-16 16:05:11:INFO: * Step 5: Getting page title of current URL
+2025-09-16 16:05:11:INFO: * Step 6: Comparing page title to expected title
+2025-09-16 16:05:11:INFO: * Test Passed
+2025-09-16 16:05:12:INFO: ****************** Admin Login Page - Test 5 Reveal Password ******************
+2025-09-16 16:05:12:INFO: * Step 1: Getting URL
+2025-09-16 16:05:13:INFO: * Step 2: Entering valid password
+2025-09-16 16:05:13:INFO: * Step 3: Clicking password eye
+2025-09-16 16:05:13:INFO: * Step 4: Verifying text in password field
+2025-09-16 16:05:13:INFO: * Test Passed
+2025-09-16 16:05:14:INFO: ****************** Admin Login Page - Test 6 Hide Password ******************
+2025-09-16 16:05:14:INFO: * Step 1: Getting URL
+2025-09-16 16:05:15:INFO: * Step 2: Entering valid password
+2025-09-16 16:05:17:INFO: * Step 3: Clicking password eye: Reveal
+2025-09-16 16:05:19:INFO: * Step 4: Clicking password eye: Hide
+2025-09-16 16:05:21:INFO: * Step 5: Verifying hidden text in password field
+2025-09-16 16:05:21:INFO: * Test Passed
+2025-09-16 16:05:23:INFO: ****************** Admin Login Page - Test 7 Remember Me ******************
+2025-09-16 16:05:23:INFO: * Step 1: Getting URL
+2025-09-16 16:05:23:INFO: * Step 2: Entering valid username
+2025-09-16 16:05:23:INFO: * Step 3: Entering valid password
+2025-09-16 16:05:23:INFO: * Step 4: Checking Remember Me box
+2025-09-16 16:05:23:INFO: * Step 5: Clicking login button
+2025-09-16 16:05:27:INFO: * Step 6: Logging out of Admin Dashboard
+2025-09-16 16:05:30:INFO: * Step 7: Verifying username in username field
+2025-09-16 16:05:30:INFO: * Test Passed
+2025-09-16 16:06:51:INFO:
+*******************************************************************************************
+ Beginging Test Run
+*******************************************************************************************
+2025-09-16 16:07:00:INFO: ****************** Admin Login Page - Test 1 Page Title ******************
+2025-09-16 16:07:00:INFO: * Step 1: Getting URL
+2025-09-16 16:07:00:INFO: * Step 2: Getting page title of current URL
+2025-09-16 16:07:00:INFO: * Step 3: Comparing page title to expected title
+2025-09-16 16:07:00:INFO: * Test Passed
+2025-09-16 16:07:02:INFO: ****************** Admin Login Page - Test 2 Invalid Username ******************
+2025-09-16 16:07:02:INFO: * Step 1: Getting URL
+2025-09-16 16:07:02:INFO: * Step 2: Entering invalid username
+2025-09-16 16:07:02:INFO: * Step 3: Entering valid password
+2025-09-16 16:07:02:INFO: * Step 4: Clicking login button
+2025-09-16 16:07:06:INFO: * Step 5: Verifying presence of error message
+2025-09-16 16:07:06:INFO: * Step 6: Comparing error text with expected text
+2025-09-16 16:07:06:INFO: * Test Passed
+2025-09-16 16:07:07:INFO: ****************** Admin Login Page - Test 3 Invalid Password ******************
+2025-09-16 16:07:07:INFO: * Step 1: Getting URL
+2025-09-16 16:07:07:INFO: * Step 2: Entering valid username
+2025-09-16 16:07:07:INFO: * Step 3: Entering invalid password
+2025-09-16 16:07:08:INFO: * Step 4: Clicking login button
+2025-09-16 16:07:11:INFO: * Step 5: Verifying presence of error message
+2025-09-16 16:07:11:INFO: * Step 6: Comparing error text with expected text
+2025-09-16 16:07:11:INFO: * Test Passed
+2025-09-16 16:07:12:INFO: ****************** Admin Login Page - Test 4 Valid Login ******************
+2025-09-16 16:07:12:INFO: * Step 1: Getting URL
+2025-09-16 16:07:13:INFO: * Step 2: Entering valid username
+2025-09-16 16:07:13:INFO: * Step 3: Entering valid password
+2025-09-16 16:07:13:INFO: * Step 4: Clicking login button
+2025-09-16 16:07:16:INFO: * Step 5: Getting page title of current URL
+2025-09-16 16:07:16:INFO: * Step 6: Comparing page title to expected title
+2025-09-16 16:07:16:INFO: * Test Passed
+2025-09-16 16:07:18:INFO: ****************** Admin Login Page - Test 5 Reveal Password ******************
+2025-09-16 16:07:18:INFO: * Step 1: Getting URL
+2025-09-16 16:07:18:INFO: * Step 2: Entering valid password
+2025-09-16 16:07:18:INFO: * Step 3: Clicking password eye
+2025-09-16 16:07:18:INFO: * Step 4: Verifying text in password field
+2025-09-16 16:07:18:INFO: * Test Passed
+2025-09-16 16:07:20:INFO: ****************** Admin Login Page - Test 6 Hide Password ******************
+2025-09-16 16:07:20:INFO: * Step 1: Getting URL
+2025-09-16 16:07:20:INFO: * Step 2: Entering valid password
+2025-09-16 16:07:22:INFO: * Step 3: Clicking password eye: Reveal
+2025-09-16 16:07:24:INFO: * Step 4: Clicking password eye: Hide
+2025-09-16 16:07:26:INFO: * Step 5: Verifying hidden text in password field
+2025-09-16 16:07:26:INFO: * Test Passed
+2025-09-16 16:07:28:INFO: ****************** Admin Login Page - Test 7 Remember Me ******************
+2025-09-16 16:07:28:INFO: * Step 1: Getting URL
+2025-09-16 16:07:28:INFO: * Step 2: Entering valid username
+2025-09-16 16:07:28:INFO: * Step 3: Entering valid password
+2025-09-16 16:07:28:INFO: * Step 4: Checking Remember Me box
+2025-09-16 16:07:29:INFO: * Step 5: Clicking login button
+2025-09-16 16:07:32:INFO: * Step 6: Logging out of Admin Dashboard
+2025-09-16 16:07:35:INFO: * Step 7: Verifying username in username field
+2025-09-16 16:07:35:INFO: * Test Passed
+2025-09-17 09:54:19:INFO:
+********************************************************************************************************************
+ Beginging Test Run
+********************************************************************************************************************
+2025-09-17 09:54:43:INFO: ****************** Admin Login Page - Test 1 Page Title ******************
+2025-09-17 09:54:43:INFO: * Step 1: Getting URL
+2025-09-17 09:54:45:INFO: * Step 2: Getting page title of current URL
+2025-09-17 09:54:45:INFO: * Step 3: Comparing page title to expected title
+2025-09-17 09:54:45:INFO: * Test Passed
+2025-09-17 09:54:46:INFO: ****************** Admin Login Page - Test 2 Invalid Username ******************
+2025-09-17 09:54:46:INFO: * Step 1: Getting URL
+2025-09-17 09:54:48:INFO: * Step 2: Entering invalid username
+2025-09-17 09:54:48:INFO: * Step 3: Entering valid password
+2025-09-17 09:54:48:INFO: * Step 4: Clicking login button
+2025-09-17 09:54:52:INFO: * Step 5: Verifying presence of error message
+2025-09-17 09:54:52:INFO: * Step 6: Comparing error text with expected text
+2025-09-17 09:54:52:INFO: * Test Passed
+2025-09-17 09:54:53:INFO: ****************** Admin Login Page - Test 3 Invalid Password ******************
+2025-09-17 09:54:53:INFO: * Step 1: Getting URL
+2025-09-17 09:54:55:INFO: * Step 2: Entering valid username
+2025-09-17 09:54:55:INFO: * Step 3: Entering invalid password
+2025-09-17 09:54:55:INFO: * Step 4: Clicking login button
+2025-09-17 09:54:58:INFO: * Step 5: Verifying presence of error message
+2025-09-17 09:54:58:INFO: * Step 6: Comparing error text with expected text
+2025-09-17 09:54:58:INFO: * Test Passed
+2025-09-17 09:54:59:INFO: ****************** Admin Login Page - Test 4 Valid Login ******************
+2025-09-17 09:54:59:INFO: * Step 1: Getting URL
+2025-09-17 09:55:01:INFO: * Step 2: Entering valid username
+2025-09-17 09:55:01:INFO: * Step 3: Entering valid password
+2025-09-17 09:55:01:INFO: * Step 4: Clicking login button
+2025-09-17 09:55:04:INFO: * Step 5: Getting page title of current URL
+2025-09-17 09:55:08:INFO: * Step 6: Comparing page title to expected title
+2025-09-17 09:55:08:INFO: * Test Passed
+2025-09-17 09:55:09:INFO: ****************** Admin Login Page - Test 5 Reveal Password ******************
+2025-09-17 09:55:09:INFO: * Step 1: Getting URL
+2025-09-17 09:55:10:INFO: * Step 2: Entering valid password
+2025-09-17 09:55:10:INFO: * Step 3: Clicking password eye
+2025-09-17 09:55:10:INFO: * Step 4: Verifying text in password field
+2025-09-17 09:55:10:INFO: * Test Passed
+2025-09-17 09:55:12:INFO: ****************** Admin Login Page - Test 6 Hide Password ******************
+2025-09-17 09:55:12:INFO: * Step 1: Getting URL
+2025-09-17 09:55:13:INFO: * Step 2: Entering valid password
+2025-09-17 09:55:15:INFO: * Step 3: Clicking password eye: Reveal
+2025-09-17 09:55:17:INFO: * Step 4: Clicking password eye: Hide
+2025-09-17 09:55:19:INFO: * Step 5: Verifying hidden text in password field
+2025-09-17 09:55:19:INFO: * Test Passed
+2025-09-17 09:55:20:INFO: ****************** Admin Login Page - Test 7 Remember Me ******************
+2025-09-17 09:55:20:INFO: * Step 1: Getting URL
+2025-09-17 09:55:21:INFO: * Step 2: Entering valid username
+2025-09-17 09:55:21:INFO: * Step 3: Entering valid password
+2025-09-17 09:55:21:INFO: * Step 4: Checking Remember Me box
+2025-09-17 09:55:21:INFO: * Step 5: Clicking login button
+2025-09-17 09:55:25:INFO: * Step 6: Logging out of Admin Dashboard
+2025-09-17 09:55:28:INFO: * Step 7: Verifying username in username field
+2025-09-17 09:55:28:INFO: * Test Passed
+2025-09-17 09:56:07:INFO:
+************************************************************************************************************************
+ Beginging Test Run
+************************************************************************************************************************
+2025-09-17 09:56:16:INFO: ****************** Admin Login Page - Test 1 Page Title ******************
+2025-09-17 09:56:16:INFO: * Step 1: Getting URL
+2025-09-17 09:56:16:INFO: * Step 2: Getting page title of current URL
+2025-09-17 09:56:16:INFO: * Step 3: Comparing page title to expected title
+2025-09-17 09:56:16:INFO: * Test Passed
+2025-09-17 09:56:17:INFO: ****************** Admin Login Page - Test 2 Invalid Username ******************
+2025-09-17 09:56:17:INFO: * Step 1: Getting URL
+2025-09-17 09:56:18:INFO: * Step 2: Entering invalid username
+2025-09-17 09:56:18:INFO: * Step 3: Entering valid password
+2025-09-17 09:56:18:INFO: * Step 4: Clicking login button
+2025-09-17 09:56:22:INFO: * Step 5: Verifying presence of error message
+2025-09-17 09:56:22:INFO: * Step 6: Comparing error text with expected text
+2025-09-17 09:56:22:INFO: * Test Passed
+2025-09-17 09:56:23:INFO: ****************** Admin Login Page - Test 3 Invalid Password ******************
+2025-09-17 09:56:23:INFO: * Step 1: Getting URL
+2025-09-17 09:56:24:INFO: * Step 2: Entering valid username
+2025-09-17 09:56:24:INFO: * Step 3: Entering invalid password
+2025-09-17 09:56:24:INFO: * Step 4: Clicking login button
+2025-09-17 09:56:27:INFO: * Step 5: Verifying presence of error message
+2025-09-17 09:56:27:INFO: * Step 6: Comparing error text with expected text
+2025-09-17 09:56:27:INFO: * Test Passed
+2025-09-17 09:56:28:INFO: ****************** Admin Login Page - Test 4 Valid Login ******************
+2025-09-17 09:56:28:INFO: * Step 1: Getting URL
+2025-09-17 09:56:29:INFO: * Step 2: Entering valid username
+2025-09-17 09:56:29:INFO: * Step 3: Entering valid password
+2025-09-17 09:56:29:INFO: * Step 4: Clicking login button
+2025-09-17 09:56:32:INFO: * Step 5: Getting page title of current URL
+2025-09-17 09:56:32:INFO: * Step 6: Comparing page title to expected title
+2025-09-17 09:56:32:INFO: * Test Passed
+2025-09-17 09:56:34:INFO: ****************** Admin Login Page - Test 5 Reveal Password ******************
+2025-09-17 09:56:34:INFO: * Step 1: Getting URL
+2025-09-17 09:56:34:INFO: * Step 2: Entering valid password
+2025-09-17 09:56:34:INFO: * Step 3: Clicking password eye
+2025-09-17 09:56:35:INFO: * Step 4: Verifying text in password field
+2025-09-17 09:56:35:INFO: * Test Passed
+2025-09-17 09:56:36:INFO: ****************** Admin Login Page - Test 6 Hide Password ******************
+2025-09-17 09:56:36:INFO: * Step 1: Getting URL
+2025-09-17 09:56:36:INFO: * Step 2: Entering valid password
+2025-09-17 09:56:38:INFO: * Step 3: Clicking password eye: Reveal
+2025-09-17 09:56:41:INFO: * Step 4: Clicking password eye: Hide
+2025-09-17 09:56:43:INFO: * Step 5: Verifying hidden text in password field
+2025-09-17 09:56:43:INFO: * Test Passed
+2025-09-17 09:56:44:INFO: ****************** Admin Login Page - Test 7 Remember Me ******************
+2025-09-17 09:56:44:INFO: * Step 1: Getting URL
+2025-09-17 09:56:44:INFO: * Step 2: Entering valid username
+2025-09-17 09:56:45:INFO: * Step 3: Entering valid password
+2025-09-17 09:56:45:INFO: * Step 4: Checking Remember Me box
+2025-09-17 09:56:45:INFO: * Step 5: Clicking login button
+2025-09-17 09:56:48:INFO: * Step 6: Logging out of Admin Dashboard
+2025-09-17 09:56:51:INFO: * Step 7: Verifying username in username field
+2025-09-17 09:56:52:INFO: * Test Passed
+2025-09-17 10:22:24:INFO:
+************************************************************************************************************************
+ Beginging Test Run
+************************************************************************************************************************
+2025-09-17 10:22:25:INFO: ****************** Admin Login Page - Test 1 Page Title ******************
+2025-09-17 10:22:25:INFO: * Step 1: Getting URL
+2025-09-17 10:22:26:INFO: * Step 2: Getting page title of current URL
+2025-09-17 10:22:26:INFO: * Step 3: Comparing page title to expected title
+2025-09-17 10:22:26:INFO: * Test Passed
+2025-09-17 10:23:26:INFO:
+************************************************************************************************************************
+ Beginging Test Run
+************************************************************************************************************************
+2025-09-17 11:45:22:INFO:
+************************************************************************************************************************
+ Beginging Test Run
+************************************************************************************************************************
+2025-09-17 11:45:55:INFO: ****************** Admin Login Page - Test 1 Invalid Password ******************
+2025-09-17 11:45:55:INFO: * Step 1: Getting URL
+2025-09-17 11:45:56:INFO: * Step 2: Entering valid username
+2025-09-17 11:45:56:INFO: * Step 3: Entering invalid password
+2025-09-17 11:45:56:INFO: * Step 4: Clicking login button
+2025-09-17 11:45:59:INFO: * Step 5: Verifying presence of error message
+2025-09-17 11:45:59:INFO: * Step 6: Comparing error text with expected text
+2025-09-17 11:45:59:INFO: * Test Passed
+2025-09-17 11:46:04:INFO: ****************** Admin Login Page - Test 2 Valid Login ******************
+2025-09-17 11:46:04:INFO: * Step 1: Getting URL
+2025-09-17 11:46:05:INFO: * Step 2: Entering valid username
+2025-09-17 11:46:05:INFO: * Step 3: Entering valid password
+2025-09-17 11:46:05:INFO: * Step 4: Clicking login button
+2025-09-17 11:46:09:INFO: * Step 5: Getting page title of current URL
+2025-09-17 11:46:09:INFO: * Step 6: Comparing page title to expected title
+2025-09-17 11:46:09:INFO: * Test Passed
+2025-09-17 11:46:14:INFO: ****************** Admin Login Page - Test 3 Reveal Password ******************
+2025-09-17 11:46:14:INFO: * Step 1: Getting URL
+2025-09-17 11:46:15:INFO: * Step 2: Entering valid password
+2025-09-17 11:46:15:INFO: * Step 3: Clicking password eye
+2025-09-17 11:46:15:INFO: * Step 4: Verifying text in password field
+2025-09-17 11:46:15:INFO: * Test Passed
+2025-09-17 11:46:20:INFO: ****************** Admin Login Page - Test 4 Hide Password ******************
+2025-09-17 11:46:20:INFO: * Step 1: Getting URL
+2025-09-17 11:46:21:INFO: * Step 2: Entering valid password
+2025-09-17 11:46:24:INFO: * Step 3: Clicking password eye: Reveal
+2025-09-17 11:46:26:INFO: * Step 4: Clicking password eye: Hide
+2025-09-17 11:46:28:INFO: * Step 5: Verifying hidden text in password field
+2025-09-17 11:46:28:INFO: * Test Passed
+2025-09-17 11:46:33:INFO: ****************** Admin Login Page - Test 5 Remember Me ******************
+2025-09-17 11:46:33:INFO: * Step 1: Getting URL
+2025-09-17 11:46:34:INFO: * Step 2: Entering valid username
+2025-09-17 11:46:34:INFO: * Step 3: Entering valid password
+2025-09-17 11:46:34:INFO: * Step 4: Checking Remember Me box
+2025-09-17 11:46:34:INFO: * Step 5: Clicking login button
+2025-09-17 11:46:38:INFO: * Step 6: Logging out of Admin Dashboard
+2025-09-17 11:46:41:INFO: * Step 7: Verifying username in username field
+2025-09-17 11:46:41:INFO: * Test Passed
+2025-09-17 11:57:17:INFO:
+************************************************************************************************************************
+ Beginging Test Run
+************************************************************************************************************************
+2025-09-17 11:57:18:INFO:
+************************************************************************************************************************
+ Beginging Test Run
+************************************************************************************************************************
+2025-09-17 11:57:18:INFO:
+************************************************************************************************************************
+ Beginging Test Run
+************************************************************************************************************************
+2025-09-17 11:57:20:INFO: ****************** Admin Login Page - Test 1 Invalid Password ******************
+2025-09-17 11:57:20:INFO: * Step 1: Getting URL
+2025-09-17 11:57:20:INFO: ****************** Admin Login Page - Test 1 Reveal Password ******************
+2025-09-17 11:57:20:INFO: * Step 1: Getting URL
+2025-09-17 11:57:20:INFO: ****************** Admin Login Page - Test 1 Page Title ******************
+2025-09-17 11:57:20:INFO: * Step 1: Getting URL
+2025-09-17 11:57:21:INFO: * Step 2: Entering valid username
+2025-09-17 11:57:21:INFO: * Step 2: Entering valid password
+2025-09-17 11:57:21:INFO: * Step 3: Entering invalid password
+2025-09-17 11:57:21:INFO: * Step 3: Clicking password eye
+2025-09-17 11:57:21:INFO: * Step 4: Clicking login button
+2025-09-17 11:57:21:INFO: * Step 2: Getting page title of current URL
+2025-09-17 11:57:21:INFO: * Step 4: Verifying text in password field
+2025-09-17 11:57:21:INFO: * Step 3: Comparing page title to expected title
+2025-09-17 11:57:21:INFO: * Test Passed
+2025-09-17 11:57:21:INFO: * Test Passed
+2025-09-17 11:57:22:INFO: ****************** Admin Login Page - Test 2 Hide Password ******************
+2025-09-17 11:57:22:INFO: * Step 1: Getting URL
+n Login Page - Test 2 Invalid Username ******************
+2025-09-17 11:57:22:INFO: * Step 1: Getting URL
+2025-09-17 11:57:23:INFO: * Step 2: Entering invalid username
+2025-09-17 11:57:23:INFO: * Step 2: Entering valid password
+2025-09-17 11:57:23:INFO: * Step 3: Entering valid password
+2025-09-17 11:57:23:INFO: * Step 4: Clicking login button
+2025-09-17 11:57:24:INFO: * Step 5: Verifying presence of error message
+2025-09-17 11:57:24:INFO: * Step 6: Comparing error text with expected text
+2025-09-17 11:57:24:INFO: * Test Passed
+2025-09-17 11:57:25:INFO: * Step 3: Clicking password eye: Reveal
+2025-09-17 11:57:25:INFO: ****************** Admin Login Page - Test 2 Valid Login ******************
+2025-09-17 11:57:25:INFO: * Step 1: Getting URL
+2025-09-17 11:57:26:INFO: * Step 2: Entering valid username
+2025-09-17 11:57:26:INFO: * Step 3: Entering valid password
+2025-09-17 11:57:26:INFO: * Step 4: Clicking login button
+2025-09-17 11:57:27:INFO: * Step 5: Verifying presence of error message
+2025-09-17 11:57:27:INFO: * Step 6: Comparing error text with expected text
+2025-09-17 11:57:27:INFO: * Test Passed
+2025-09-17 11:57:27:INFO: * Step 4: Clicking password eye: Hide
+2025-09-17 11:57:28:INFO: ****************** Admin Login Page - Test 3 Remember Me ******************
+2025-09-17 11:57:28:INFO: * Step 1: Getting URL
+2025-09-17 11:57:28:INFO: * Step 2: Entering valid username
+2025-09-17 11:57:29:INFO: * Step 3: Entering valid password
+2025-09-17 11:57:29:INFO: * Step 4: Checking Remember Me box
+2025-09-17 11:57:29:INFO: * Step 5: Clicking login button
+2025-09-17 11:57:29:INFO: * Step 5: Verifying hidden text in password field
+2025-09-17 11:57:29:INFO: * Test Passed
+2025-09-17 11:57:30:INFO: * Step 5: Getting page title of current URL
+2025-09-17 11:57:30:INFO: * Step 6: Comparing page title to expected title
+2025-09-17 11:57:30:INFO: * Test Passed
+2025-09-17 11:57:32:INFO: * Step 6: Logging out of Admin Dashboard
+2025-09-17 11:57:36:INFO: * Step 7: Verifying username in username field
+2025-09-17 11:57:36:INFO: * Test Passed
+2025-09-17 12:07:54:INFO:
+************************************************************************************************************************
+ Beginging Test Run
+************************************************************************************************************************
+2025-09-17 12:08:03:INFO: ****************** Admin Login Page - Test 1 Page Title ******************
+2025-09-17 12:08:03:INFO: * Step 1: Getting URL
+2025-09-17 12:08:04:INFO: * Step 2: Getting page title of current URL
+2025-09-17 12:08:04:INFO: * Step 3: Comparing page title to expected title
+2025-09-17 12:08:04:INFO: * Test Passed
+2025-09-17 12:08:05:INFO: ****************** Admin Login Page - Test 2 Invalid Username ******************
+2025-09-17 12:08:05:INFO: * Step 1: Getting URL
+2025-09-17 12:08:05:INFO: * Step 2: Entering invalid username
+2025-09-17 12:08:06:INFO: * Step 3: Entering valid password
+2025-09-17 12:08:06:INFO: * Step 4: Clicking login button
+2025-09-17 12:08:09:INFO: * Step 5: Verifying presence of error message
+2025-09-17 12:08:09:INFO: * Step 6: Comparing error text with expected text
+2025-09-17 12:08:09:INFO: * Test Passed
+2025-09-17 12:08:10:INFO: ****************** Admin Login Page - Test 3 Invalid Password ******************
+2025-09-17 12:08:10:INFO: * Step 1: Getting URL
+2025-09-17 12:08:11:INFO: * Step 2: Entering valid username
+2025-09-17 12:08:11:INFO: * Step 3: Entering invalid password
+2025-09-17 12:08:11:INFO: * Step 4: Clicking login button
+2025-09-17 12:08:14:INFO: * Step 5: Verifying presence of error message
+2025-09-17 12:08:14:INFO: * Step 6: Comparing error text with expected text
+2025-09-17 12:08:14:INFO: * Test Passed
+2025-09-17 12:08:15:INFO: ****************** Admin Login Page - Test 4 Valid Login ******************
+2025-09-17 12:08:15:INFO: * Step 1: Getting URL
+2025-09-17 12:08:16:INFO: * Step 2: Entering valid username
+2025-09-17 12:08:16:INFO: * Step 3: Entering valid password
+2025-09-17 12:08:16:INFO: * Step 4: Clicking login button
+2025-09-17 12:08:20:INFO: * Step 5: Getting page title of current URL
+2025-09-17 12:08:20:INFO: * Step 6: Comparing page title to expected title
+2025-09-17 12:08:20:INFO: * Test Passed
+2025-09-17 12:08:21:INFO: ****************** Admin Login Page - Test 5 Reveal Password ******************
+2025-09-17 12:08:21:INFO: * Step 1: Getting URL
+2025-09-17 12:08:21:INFO: * Step 2: Entering valid password
+2025-09-17 12:08:22:INFO: * Step 3: Clicking password eye
+2025-09-17 12:08:22:INFO: * Step 4: Verifying text in password field
+2025-09-17 12:08:22:INFO: * Test Passed
+2025-09-17 12:08:23:INFO: ****************** Admin Login Page - Test 6 Hide Password ******************
+2025-09-17 12:08:23:INFO: * Step 1: Getting URL
+2025-09-17 12:08:23:INFO: * Step 2: Entering valid password
+2025-09-17 12:08:25:INFO: * Step 3: Clicking password eye: Reveal
+2025-09-17 12:08:28:INFO: * Step 4: Clicking password eye: Hide
+2025-09-17 12:08:30:INFO: * Step 5: Verifying hidden text in password field
+2025-09-17 12:08:30:INFO: * Test Passed
+2025-09-17 12:08:31:INFO: ****************** Admin Login Page - Test 7 Remember Me ******************
+2025-09-17 12:08:31:INFO: * Step 1: Getting URL
+2025-09-17 12:08:31:INFO: * Step 2: Entering valid username
+2025-09-17 12:08:32:INFO: * Step 3: Entering valid password
+2025-09-17 12:08:32:INFO: * Step 4: Checking Remember Me box
+2025-09-17 12:08:32:INFO: * Step 5: Clicking login button
+2025-09-17 12:08:35:INFO: * Step 6: Logging out of Admin Dashboard
+2025-09-17 12:08:38:INFO: * Step 7: Verifying username in username field
+2025-09-17 12:08:38:INFO: * Test Passed
+2025-09-17 12:23:50:INFO: * Admin Login Page::Page Title::Test Passed
+2025-09-17 12:23:55:INFO: * Admin Login Page::Invalid Username::Test Passed
+2025-09-17 12:24:01:INFO: * Admin Login Page::Invalid Password::Test Passed
+2025-09-17 12:24:06:INFO: * Admin Login Page::Valid Login::Test Passed
+2025-09-17 12:24:09:INFO: * Admin Login Page::Reveal Password::Test Passed
+2025-09-17 12:24:17:INFO: * Admin Login Page::Hide Password::Test Passed
+2025-09-17 12:24:22:INFO: * Step 6: Logging out of Admin Dashboard
+2025-09-17 12:24:25:INFO: * Step 7: Verifying username in username field
+2025-09-17 12:24:25:INFO: * Test Passed
+2025-09-17 12:29:34:INFO: * Admin Login Page::Page Title::Test Passed
+2025-09-17 12:29:39:INFO: * Admin Login Page::Invalid Username::Test Passed
+2025-09-17 12:29:44:INFO: * Admin Login Page::Invalid Password::Test Passed
+2025-09-17 12:29:51:INFO: * Admin Login Page::Valid Login::Test Passed
+2025-09-17 12:29:53:INFO: * Admin Login Page::Reveal Password::Test Passed
+2025-09-17 12:30:01:INFO: * Admin Login Page::Hide Password::Test Passed
+2025-09-17 12:30:10:INFO: * Admin Login Page::Remember Me::Test Passed
+2025-09-17 12:31:33:INFO: * Admin Login Page::Page Title::Test Passed
+2025-09-17 12:31:43:INFO: * Admin Login Page::Invalid Username::Test Passed
+2025-09-17 12:31:53:INFO: * Admin Login Page::Invalid Password::Test Passed
+2025-09-17 12:32:03:INFO: * Admin Login Page::Valid Login::Test Passed
+2025-09-17 12:32:10:INFO: * Admin Login Page::Reveal Password::Test Passed
+2025-09-17 12:32:22:INFO: * Admin Login Page::Hide Password::Test Passed
+2025-09-17 12:32:36:INFO: * Admin Login Page::Remember Me::Test Passed
+2025-09-17 12:34:03:INFO: * Admin Login Page::Page Title::Test Passed
+2025-09-17 12:34:12:INFO: * Admin Login Page::Invalid Username::Test Passed
+2025-09-17 12:34:22:INFO: * Admin Login Page::Invalid Password::Test Passed
+2025-09-17 12:34:32:INFO: * Admin Login Page::Valid Login::Test Passed
+2025-09-17 12:34:39:INFO: * Admin Login Page::Reveal Password::Test Passed
+2025-09-17 12:34:51:INFO: * Admin Login Page::Hide Password::Test Passed
+2025-09-17 12:35:04:INFO: * Admin Login Page::Remember Me::Test Passed
+2025-09-17 15:57:17:INFO: * Home Page::Change Currency to Euro::Test Failed::$ symbol detected
+2025-09-17 15:57:54:INFO: * Home Page::Change Currency to Euro::Test Failed::$ symbol detected
+2025-09-17 15:59:05:INFO: * Home Page::Change Currency to Euro::Test Passed
+2025-09-17 15:59:19:INFO: * Home Page::Change Currency to Euro::Test Failed::$ symbol detected
+2025-09-17 15:59:51:INFO: * Home Page::Change Currency to Euro::Test Passed
+2025-09-17 16:00:21:INFO: * Home Page::Change Currency to Euro::Test Passed
+2025-09-17 16:01:52:INFO: * Home Page::Change Currency to Dollar::Test Passed
+2025-09-17 16:11:21:INFO: * Home Page::Search For Items::Test Passed
