@@ -4,26 +4,33 @@ from selenium import webdriver
 from base_pages.Home_Page import HomePage
 from base_pages.Search_Page import SearchPage
 from base_pages.Shop_By_Category import ShopByCategory
+from base_pages.User_Registration_Page import UserRegistrationPage
 from utilities.logger import Logger
+from utilities.test_tools import TestTools
 from selenium.webdriver.common.by import By
 
 
 class TestHomePage:
     logger = Logger.log_generator()
 
-    def get_page_maximize_window(self):
-        self.driver.get(HomePage.url)
-        self.driver.maximize_window()
-
-    def test_register_user(self, setup):
+    def test_register_user_link(self, setup):
         self.driver = setup
-        self.get_page_maximize_window()
+        TestTools.get_page_maximize_window(self.driver, HomePage.url)
         home_page = HomePage(self.driver)
         home_page.click_register()
+        page_title = self.driver.title
+        if page_title == UserRegistrationPage.page_title:
+            assert True
+            self.logger.info(" * Home Page::Register User Link::Test Passed")
+            self.driver.close()
+        else:
+            self.logger.info(" ! Home Page::Register User Link::Test Failed")
+            self.driver.close()
+            assert False
 
     def test_search_for_items(self, setup):
         self.driver = setup
-        self.get_page_maximize_window()
+        TestTools.get_page_maximize_window(self.driver, HomePage.url)
         home_page = HomePage(self.driver)
         time.sleep(3)
         home_page.enter_searchbox("phone")
@@ -41,7 +48,7 @@ class TestHomePage:
 
     def test_change_currency_to_euro(self, setup):
         self.driver = setup
-        self.get_page_maximize_window()
+        TestTools.get_page_maximize_window(self.driver, HomePage.url)
         home_page = HomePage(self.driver)
         time.sleep(1)
         home_page.click_currency_dropdown("Euro")
@@ -58,7 +65,7 @@ class TestHomePage:
 
     def test_change_currency_to_dollar(self, setup):
         self.driver = setup
-        self.get_page_maximize_window()
+        TestTools.get_page_maximize_window(self.driver, HomePage.url)
         home_page = HomePage(self.driver)
         time.sleep(1)
         home_page.click_currency_dropdown("US Dollar")
@@ -75,7 +82,7 @@ class TestHomePage:
 
     def test_computers_desktops(self, setup):
         self.driver = setup
-        self.get_page_maximize_window()
+        TestTools.get_page_maximize_window(self.driver, HomePage.url)
         home_page = HomePage(self.driver)
         time.sleep(1)
         home_page.click_computers("Desktops")
@@ -93,7 +100,7 @@ class TestHomePage:
 
     def test_computers_notebooks(self, setup):
         self.driver = setup
-        self.get_page_maximize_window()
+        TestTools.get_page_maximize_window(self.driver, HomePage.url)
         home_page = HomePage(self.driver)
         time.sleep(1)
         home_page.click_computers("Notebooks")
@@ -111,7 +118,7 @@ class TestHomePage:
 
     def test_computers_software(self, setup):
         self.driver = setup
-        self.get_page_maximize_window()
+        TestTools.get_page_maximize_window(self.driver, HomePage.url)
         home_page = HomePage(self.driver)
         time.sleep(1)
         home_page.click_computers("Software")

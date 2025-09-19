@@ -35,3 +35,8 @@ class ReadConfig:
     def get_store_home_url():
         store_home_url = config.get('urls', 'store_home_url')
         return store_home_url
+
+    @staticmethod
+    def get_registration_url():
+        registration_url = config.get('urls', 'registration_url')
+        return registration_url

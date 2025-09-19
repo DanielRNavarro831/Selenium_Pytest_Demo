@@ -595,3 +595,19 @@ n Login Page - Test 2 Invalid Username ******************
 2025-09-18 12:27:40:INFO: * Home Page::Computers Desktops Submenu::Test Passed
 2025-09-18 12:28:41:INFO: * Home Page::Computers Notebooks Submenu::Test Passed
 2025-09-18 12:29:07:INFO: * Home Page::Computers Software Submenu::Test Passed
+2025-09-18 14:50:57:INFO: * Registration Page::Gender Selection::m::Test Passed
+2025-09-18 14:51:18:INFO: * Registration Page::Gender Selection::f::Test Passed
+2025-09-19 11:11:00:INFO: * Registration Page::Register User Required Fields Only::Test Passed
+2025-09-19 11:51:24:INFO: * Registration Page::Register User Required Fields Only::Test Passed
+2025-09-19 12:59:35:INFO: * Registration Page::Register User Required Fields Only::Email Used testy2@mctesterson.com::Test Passed
+2025-09-19 13:05:19:INFO: * Registration Page::Register User Required Fields Only::Email Used testy3@mctesterson.com::Test Passed
+2025-09-19 13:22:50:INFO: ! Registration Page::Register User Required Fields Only::Email Used testy4@mctesterson.com::Test Failed
+2025-09-19 13:26:08:INFO: * Admin Login Page::Invalid Username::Test Passed
+2025-09-19 13:27:39:INFO: * Registration Page::Register User Required Fields Only::Email Used testy5@mctesterson.com::Test Passed
+2025-09-19 13:33:10:INFO: * Admin Login Page::Page Title::Test Passed
+2025-09-19 13:33:32:INFO: * Admin Login Page::Invalid Username::Test Passed
+2025-09-19 13:42:24:INFO: ! Registration Page::Email Already Registered::Test Failed - Error text missing
+2025-09-19 13:42:51:INFO: ! Registration Page::Email Already Registered::Test Failed - Error text missing
+2025-09-19 13:43:58:INFO: ! Registration Page::Email Already Registered::Test Failed - Error text missing
+2025-09-19 13:46:17:INFO: ! Registration Page::Email Already Registered::Test Failed - Error text missing
+2025-09-19 13:47:45:INFO: * Registration Page::Email Already Registered::Test Passed

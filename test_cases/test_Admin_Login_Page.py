@@ -6,6 +6,7 @@ from base_pages.Admin_Dashboard import AdminDashboard
 from selenium.webdriver.common.by import By
 from utilities.read_properties import ReadConfig
 from utilities.logger import Logger
+from utilities.test_tools import TestTools
 
 
 class TestLoginAdminPage:
@@ -15,13 +16,9 @@ class TestLoginAdminPage:
     invalid_password = ReadConfig.get_invalid_admin_password()
     logger = Logger.log_generator()
 
-    def get_page_maximize_window(self):
-        self.driver.get(LoginAdminPage.url)
-        self.driver.maximize_window()
-
     def test_page_title(self, setup):
         self.driver = setup
-        self.get_page_maximize_window()
+        TestTools.get_page_maximize_window(self.driver, LoginAdminPage.url)
         title = self.driver.title
         if title == LoginAdminPage.login_page_title:
             assert True
@@ -35,13 +32,13 @@ class TestLoginAdminPage:
 
     def test_invalid_username(self, setup):
         self.driver = setup
-        self.get_page_maximize_window()
+        TestTools.get_page_maximize_window(self.driver, LoginAdminPage.url)
         page = LoginAdminPage(self.driver)
         page.enter_username(self.invalid_username)
         page.enter_password(self.valid_password)
         page.click_login_button()
         time.sleep(3)
-        if self.driver.find_element(By.XPATH, "//li").text:  # If error message exists...
+        if TestTools.check_for_element(self.driver, "xpath", "//li"):  # If error message exists...
             error_message = self.driver.find_element(By.XPATH, "//li").text
             if error_message == "No customer account found":
                 assert True
@@ -60,13 +57,13 @@ class TestLoginAdminPage:
 
     def test_invalid_password(self, setup):
         self.driver = setup
-        self.get_page_maximize_window()
+        TestTools.get_page_maximize_window(self.driver, LoginAdminPage.url)
         page = LoginAdminPage(self.driver)
         page.enter_username(self.valid_username)
         page.enter_password(self.invalid_password)
         page.click_login_button()
         time.sleep(3)
-        if self.driver.find_element(By.XPATH, "//li").text:  # If error message exists...
+        if TestTools.check_for_element(self.driver, "xpath", "//li"):  # If error message exists...
             error_message = self.driver.find_element(By.XPATH, "//li").text
             if error_message == "The credentials provided are incorrect":
                 assert True
@@ -85,7 +82,7 @@ class TestLoginAdminPage:
 
     def test_valid_login(self, setup):
         self.driver = setup
-        self.get_page_maximize_window()
+        TestTools.get_page_maximize_window(self.driver, LoginAdminPage.url)
         page = LoginAdminPage(self.driver)
         page.enter_username(self.valid_username)
         page.enter_password(self.valid_password)
@@ -104,7 +101,7 @@ class TestLoginAdminPage:
 
     def test_reveal_password(self, setup):
         self.driver = setup
-        self.get_page_maximize_window()
+        TestTools.get_page_maximize_window(self.driver, LoginAdminPage.url)
         page = LoginAdminPage(self.driver)
         page.enter_password(self.valid_password)
         page.reveal_password()
@@ -121,7 +118,7 @@ class TestLoginAdminPage:
 
     def test_hide_password(self, setup):
         self.driver = setup
-        self.get_page_maximize_window()
+        TestTools.get_page_maximize_window(self.driver, LoginAdminPage.url)
         page = LoginAdminPage(self.driver)
         page.enter_password(self.valid_password)
         time.sleep(2)
@@ -142,7 +139,7 @@ class TestLoginAdminPage:
 
     def test_remember_me(self, setup):
         self.driver = setup
-        self.get_page_maximize_window()
+        TestTools.get_page_maximize_window(self.driver, LoginAdminPage.url)
         login_page = LoginAdminPage(self.driver)
         login_page.enter_username(self.valid_username)
         login_page.enter_password(self.valid_password)
