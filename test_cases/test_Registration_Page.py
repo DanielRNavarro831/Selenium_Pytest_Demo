@@ -34,7 +34,7 @@ class TestRegistrationPage:
         if registration_page.verify_gender_selection(genders[rando]):
             TestTools.pass_test(self.driver, registration_page.page_name, test_name, genders[rando])
         else:
-            TestTools.fail_test(self.driver, registration_page.page_name, test_name)
+            TestTools.fail_test(self.driver, registration_page.page_name, test_name, True)
 
     def test_register_user_only_required_fields(self, setup):
         test_name = "Register User Required Fields Only"
@@ -54,7 +54,7 @@ class TestRegistrationPage:
         if TestTools.check_for_element(self.driver, "Class", registration_page.registration_confirmation_class):
             TestTools.pass_test(self.driver, registration_page.page_name, test_name)
         else:
-            TestTools.fail_test(self.driver, registration_page.page_name, test_name)
+            TestTools.fail_test(self.driver, registration_page.page_name, test_name, True)
 
     def test_email_already_registered(self, setup):
         test_name = "Email Already Registered"
@@ -73,9 +73,9 @@ class TestRegistrationPage:
             if error_message == "The specified email already exists":
                 TestTools.pass_test(self.driver, registration_page.page_name, test_name)
             else:
-                TestTools.fail_test(self.driver, registration_page.page_name, test_name, False, "Error text mismatch")
+                TestTools.fail_test(self.driver, registration_page.page_name, test_name, True, "Error text mismatch")
         else:
-            TestTools.fail_test(self.driver, registration_page.page_name, test_name, False, "Missing erorr text")
+            TestTools.fail_test(self.driver, registration_page.page_name, test_name, True, "Missing erorr text")
 
     def test_first_name_requirement(self, setup):
         test_name = "First Name Required Error"
@@ -89,9 +89,9 @@ class TestRegistrationPage:
             if error_message == "First name is required.":
                 TestTools.pass_test(self.driver, registration_page.page_name, test_name)
             else:
-                TestTools.fail_test(self.driver, registration_page.page_name, test_name, False, "Error text mismatch")
+                TestTools.fail_test(self.driver, registration_page.page_name, test_name, True, "Error text mismatch")
         else:
-            TestTools.fail_test(self.driver, registration_page.page_name, test_name, False, "Missing error text")
+            TestTools.fail_test(self.driver, registration_page.page_name, test_name, True, "Missing error text")
 
     def test_last_name_requirement(self, setup):
         test_name = "Last Name Required Error"
@@ -105,9 +105,9 @@ class TestRegistrationPage:
             if error_message == "Last name is required.":
                 TestTools.pass_test(self.driver, registration_page.page_name, test_name)
             else:
-                TestTools.fail_test(self.driver, registration_page.page_name, test_name, False, "Error text mismatch")
+                TestTools.fail_test(self.driver, registration_page.page_name, test_name, True, "Error text mismatch")
         else:
-            TestTools.fail_test(self.driver, registration_page.page_name, test_name, False, "Missing error text")
+            TestTools.fail_test(self.driver, registration_page.page_name, test_name, True, "Missing error text")
 
     def test_email_requirement(self, setup):
         test_name = "Email Required Error"
@@ -121,9 +121,9 @@ class TestRegistrationPage:
             if error_message == "Email is required.":
                 TestTools.pass_test(self.driver, registration_page.page_name, test_name)
             else:
-                TestTools.fail_test(self.driver, registration_page.page_name, test_name, False, "Error text mismatch")
+                TestTools.fail_test(self.driver, registration_page.page_name, test_name, True, "Error text mismatch")
         else:
-            TestTools.fail_test(self.driver, registration_page.page_name, test_name, False, "Missing error text")
+            TestTools.fail_test(self.driver, registration_page.page_name, test_name, True, "Missing error text")
 
     def test_password_requirement(self, setup):
         test_name = "Password Required Error"
@@ -137,9 +137,9 @@ class TestRegistrationPage:
             if error_message == "Password is required.":
                 TestTools.pass_test(self.driver, registration_page.page_name, test_name)
             else:
-                TestTools.fail_test(self.driver, registration_page.page_name, test_name, False, "Error text mismatch")
+                TestTools.fail_test(self.driver, registration_page.page_name, test_name, True, "Error text mismatch")
         else:
-            TestTools.fail_test(self.driver, registration_page.page_name, test_name, False, "Missing error text")
+            TestTools.fail_test(self.driver, registration_page.page_name, test_name, True, "Missing error text")
 
     def test_password_length(self, setup):
         test_name = "Password Length"
@@ -155,9 +155,9 @@ class TestRegistrationPage:
             if error_message == UserRegistrationPage.password_requirement_text:
                 TestTools.pass_test(self.driver, registration_page.page_name, test_name)
             else:
-                TestTools.fail_test(self.driver, registration_page.page_name, test_name, False, "Error text mismatch")
+                TestTools.fail_test(self.driver, registration_page.page_name, test_name, True, "Error text mismatch")
         else:
-            TestTools.fail_test(self.driver, registration_page.page_name, test_name, False, "Missing error text")
+            TestTools.fail_test(self.driver, registration_page.page_name, test_name, True, "Missing error text")
 
     def test_password_mismatch(self, setup):
         test_name = "Password Mismatch"
@@ -174,6 +174,6 @@ class TestRegistrationPage:
             if error_message == "The password and confirmation password do not match.":
                 TestTools.pass_test(self.driver, registration_page.page_name, test_name)
             else:
-                TestTools.fail_test(self.driver, registration_page.page_name, test_name, False, "Error text mismatch")
+                TestTools.fail_test(self.driver, registration_page.page_name, test_name, True, "Error text mismatch")
         else:
-            TestTools.fail_test(self.driver, registration_page.page_name, test_name, False, "Missing error text")
+            TestTools.fail_test(self.driver, registration_page.page_name, test_name, True, "Missing error text")
