@@ -9,6 +9,7 @@ from selenium.webdriver.common.by import By
 
 class ShopByCategory:
     category_header_class = "page-title"
+    page_name = "Shop by Category Page"
 
     def __init__(self, driver: webdriver):
         self.driver = driver

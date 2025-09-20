@@ -24,6 +24,7 @@ class TestRegistrationPage:
         TestRegistrationPage.email = DocReader.get_cell_value_string("Registration", "Registration Email")
 
     def test_gender_selection(self, setup):
+        test_name = "Gender Selection"
         self.driver = setup
         TestTools.get_page_maximize_window(self.driver, UserRegistrationPage.url)
         registration_page = UserRegistrationPage(self.driver)
@@ -31,15 +32,12 @@ class TestRegistrationPage:
         rando = random.randint(0, 1)
         registration_page.select_gender(genders[rando])
         if registration_page.verify_gender_selection(genders[rando]):
-            assert True
-            self.logger.info(f" * Registration Page::Gender Selection::{genders[rando]}::Test Passed")
-            self.driver.close()
+            TestTools.pass_test(self.driver, registration_page.page_name, test_name, genders[rando])
         else:
-            self.logger.info(f" * Registration Page::Gender Selection::{genders[rando]}::Test Failed - radio button not clicked")
-            self.driver.close()
-            assert False
+            TestTools.fail_test(self.driver, registration_page.page_name, test_name)
 
     def test_register_user_only_required_fields(self, setup):
+        test_name = "Register User Required Fields Only"
         self.driver = setup
         TestTools.get_page_maximize_window(self.driver, UserRegistrationPage.url)
         registration_page = UserRegistrationPage(self.driver)
@@ -54,15 +52,12 @@ class TestRegistrationPage:
         registration_page.click_register()
         time.sleep(3)
         if TestTools.check_for_element(self.driver, "Class", registration_page.registration_confirmation_class):
-            assert True
-            self.logger.info(f" * Registration Page::Register User Required Fields Only::Email Used {self.email}::Test Passed")
-            self.driver.close()
+            TestTools.pass_test(self.driver, registration_page.page_name, test_name)
         else:
-            self.logger.info(f" ! Registration Page::Register User Required Fields Only::Email Used {self.email}::Test Failed - No confirmation text")
-            self.driver.close()
-            assert False
+            TestTools.fail_test(self.driver, registration_page.page_name, test_name)
 
-    def test_email_already_exists(self, setup):
+    def test_email_already_registered(self, setup):
+        test_name = "Email Already Registered"
         self.driver = setup
         TestTools.get_page_maximize_window(self.driver, UserRegistrationPage.url)
         registration_page = UserRegistrationPage(self.driver)
@@ -74,10 +69,111 @@ class TestRegistrationPage:
         registration_page.click_register()
         time.sleep(3)
         if TestTools.check_for_element(self.driver, "xpath", UserRegistrationPage.registration_error_xpath):
-            assert True
-            self.logger.info(" * Registration Page::Email Already Registered::Test Passed")
-            self.driver.close()
+            error_message = self.driver.find_element(By.XPATH, UserRegistrationPage.registration_error_xpath).text
+            if error_message == "The specified email already exists":
+                TestTools.pass_test(self.driver, registration_page.page_name, test_name)
+            else:
+                TestTools.fail_test(self.driver, registration_page.page_name, test_name, False, "Error text mismatch")
         else:
-            self.logger.info(" ! Registration Page::Email Already Registered::Test Failed - Error text missing")
-            self.driver.close()
-            assert False
+            TestTools.fail_test(self.driver, registration_page.page_name, test_name, False, "Missing erorr text")
+
+    def test_first_name_requirement(self, setup):
+        test_name = "First Name Required Error"
+        self.driver = setup
+        TestTools.get_page_maximize_window(self.driver, UserRegistrationPage.url)
+        registration_page = UserRegistrationPage(self.driver)
+        registration_page.click_register()
+        time.sleep(2)
+        if TestTools.check_for_element(self.driver, "ID", UserRegistrationPage.first_name_error_id):
+            error_message = self.driver.find_element(By.ID, UserRegistrationPage.first_name_error_id).text
+            if error_message == "First name is required.":
+                TestTools.pass_test(self.driver, registration_page.page_name, test_name)
+            else:
+                TestTools.fail_test(self.driver, registration_page.page_name, test_name, False, "Error text mismatch")
+        else:
+            TestTools.fail_test(self.driver, registration_page.page_name, test_name, False, "Missing error text")
+
+    def test_last_name_requirement(self, setup):
+        test_name = "Last Name Required Error"
+        self.driver = setup
+        TestTools.get_page_maximize_window(self.driver, UserRegistrationPage.url)
+        registration_page = UserRegistrationPage(self.driver)
+        registration_page.click_register()
+        time.sleep(2)
+        if TestTools.check_for_element(self.driver, "ID", UserRegistrationPage.last_name_error_id):
+            error_message = self.driver.find_element(By.ID, UserRegistrationPage.last_name_error_id).text
+            if error_message == "Last name is required.":
+                TestTools.pass_test(self.driver, registration_page.page_name, test_name)
+            else:
+                TestTools.fail_test(self.driver, registration_page.page_name, test_name, False, "Error text mismatch")
+        else:
+            TestTools.fail_test(self.driver, registration_page.page_name, test_name, False, "Missing error text")
+
+    def test_email_requirement(self, setup):
+        test_name = "Email Required Error"
+        self.driver = setup
+        TestTools.get_page_maximize_window(self.driver, UserRegistrationPage.url)
+        registration_page = UserRegistrationPage(self.driver)
+        registration_page.click_register()
+        time.sleep(2)
+        if TestTools.check_for_element(self.driver, "ID", UserRegistrationPage.email_error_id):
+            error_message = self.driver.find_element(By.ID, UserRegistrationPage.email_error_id).text
+            if error_message == "Email is required.":
+                TestTools.pass_test(self.driver, registration_page.page_name, test_name)
+            else:
+                TestTools.fail_test(self.driver, registration_page.page_name, test_name, False, "Error text mismatch")
+        else:
+            TestTools.fail_test(self.driver, registration_page.page_name, test_name, False, "Missing error text")
+
+    def test_password_requirement(self, setup):
+        test_name = "Password Required Error"
+        self.driver = setup
+        TestTools.get_page_maximize_window(self.driver, UserRegistrationPage.url)
+        registration_page = UserRegistrationPage(self.driver)
+        registration_page.click_register()
+        time.sleep(2)
+        if TestTools.check_for_element(self.driver, "ID", UserRegistrationPage.confirm_password_error_id):
+            error_message = self.driver.find_element(By.ID, UserRegistrationPage.confirm_password_error_id).text
+            if error_message == "Password is required.":
+                TestTools.pass_test(self.driver, registration_page.page_name, test_name)
+            else:
+                TestTools.fail_test(self.driver, registration_page.page_name, test_name, False, "Error text mismatch")
+        else:
+            TestTools.fail_test(self.driver, registration_page.page_name, test_name, False, "Missing error text")
+
+    def test_password_length(self, setup):
+        test_name = "Password Length"
+        self.driver = setup
+        TestTools.get_page_maximize_window(self.driver, UserRegistrationPage.url)
+        registration_page = UserRegistrationPage(self.driver)
+        registration_page.enter_password("abc")
+        time.sleep(2)
+        TestTools.press_key(self.driver, "tab")
+        time.sleep(2)
+        if TestTools.check_for_element(self.driver, "ID", UserRegistrationPage.password_error_id):
+            error_message = self.driver.find_element(By.ID, UserRegistrationPage.password_error_id).text
+            if error_message == UserRegistrationPage.password_requirement_text:
+                TestTools.pass_test(self.driver, registration_page.page_name, test_name)
+            else:
+                TestTools.fail_test(self.driver, registration_page.page_name, test_name, False, "Error text mismatch")
+        else:
+            TestTools.fail_test(self.driver, registration_page.page_name, test_name, False, "Missing error text")
+
+    def test_password_mismatch(self, setup):
+        test_name = "Password Mismatch"
+        self.driver = setup
+        TestTools.get_page_maximize_window(self.driver, UserRegistrationPage.url)
+        registration_page = UserRegistrationPage(self.driver)
+        registration_page.enter_password(self.password)
+        registration_page.enter_confirm_password(self.password[:-1])
+        time.sleep(2)
+        TestTools.press_key(self.driver, "tab")
+        time.sleep(2)
+        if TestTools.check_for_element(self.driver, "ID", UserRegistrationPage.confirm_password_error_id):
+            error_message = self.driver.find_element(By.ID, UserRegistrationPage.confirm_password_error_id).text
+            if error_message == "The password and confirmation password do not match.":
+                TestTools.pass_test(self.driver, registration_page.page_name, test_name)
+            else:
+                TestTools.fail_test(self.driver, registration_page.page_name, test_name, False, "Error text mismatch")
+        else:
+            TestTools.fail_test(self.driver, registration_page.page_name, test_name, False, "Missing error text")

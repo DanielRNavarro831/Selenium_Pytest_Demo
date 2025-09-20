@@ -19,6 +19,7 @@ class HomePage:
     price_check_xpath = "//span[@class='price actual-price']"
     top_menu_xpath = '//ul[@class="top-menu notmobile"]/li'
     url = ReadConfig.get_store_home_url()
+    page_name = "Home Page"
 
     def __init__(self, driver: webdriver):
         self.driver = driver

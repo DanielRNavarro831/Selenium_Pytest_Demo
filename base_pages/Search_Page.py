@@ -6,6 +6,7 @@ from selenium.webdriver.support.ui import Select
 
 class SearchPage:
     first_result_class = "product-title"
+    page_name = "Search Results"
 
     def __init__(self, driver: webdriver):
         self.driver = driver

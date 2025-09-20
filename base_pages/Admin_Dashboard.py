@@ -4,6 +4,7 @@ from selenium.webdriver.common.by import By
 
 class AdminDashboard:
     dashboard_page_title = "Dashboard / nopCommerce administration"
+    page_name = "Admin Dashboard"
 
     def __init__(self, driver: webdriver):
         self.driver = driver

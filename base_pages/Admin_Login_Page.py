@@ -3,7 +3,7 @@ from selenium.webdriver.common.by import By
 from utilities.read_properties import ReadConfig
 
 
-class LoginAdminPage:
+class AdminLoginPage:
     email_field_id = "Email"
     password_field_id = "Password"
     login_button_xpath = "//button[@type='submit']"
@@ -12,6 +12,7 @@ class LoginAdminPage:
     password_eye_open_xpath = "//span[@class='password-eye password-eye-open']"
     login_page_title = "nopCommerce demo store. Login"
     url = ReadConfig.get_admin_login_url()
+    page_name = "Admin Login Page"
 
     def __init__(self, driver: webdriver):
         self.driver = driver

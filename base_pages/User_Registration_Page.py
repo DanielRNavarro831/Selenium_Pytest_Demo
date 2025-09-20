@@ -16,8 +16,15 @@ class UserRegistrationPage:
     register_button_id = "register-button"
     registration_confirmation_class = "result"
     registration_error_xpath = '//div[@class="message-error validation-summary-errors"]'
+    first_name_error_id = "FirstName-error"
+    last_name_error_id = "LastName-error"
+    email_error_id = "Email-error"
+    confirm_password_error_id = "ConfirmPassword-error"
+    password_error_id = "Password-error"
     page_title = "nopCommerce demo store. Register"
+    password_requirement_text = "Password must meet the following rules: must have at least 6 characters and not greater than 64 characters"
     url = ReadConfig.get_registration_url()
+    page_name = "User Registration Page"
 
     def __init__(self, driver: webdriver):
         self.driver = driver

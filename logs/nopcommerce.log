@@ -611,3 +611,36 @@ n Login Page - Test 2 Invalid Username ******************
 2025-09-19 13:43:58:INFO: ! Registration Page::Email Already Registered::Test Failed - Error text missing
 2025-09-19 13:46:17:INFO: ! Registration Page::Email Already Registered::Test Failed - Error text missing
 2025-09-19 13:47:45:INFO: * Registration Page::Email Already Registered::Test Passed
+2025-09-19 16:34:28:INFO: ! Registration Page::Email Already Registered::Test Failed - Error text missing
+2025-09-19 16:35:12:INFO: * Registration Page::Email Already Registered::Test Passed
+2025-09-19 16:35:30:INFO: * Registration Page::Gender Selection::f::Test Passed
+2025-09-19 16:35:38:INFO: * Registration Page::Register User Required Fields Only::Email Used testy6@mctesterson.com::Test Passed
+2025-09-19 16:35:43:INFO: * Registration Page::Email Already Registered::Test Passed
+2025-09-19 16:35:47:INFO: ! Registration Page::First Name Required Error::Test Failed - Missing error text
+2025-09-19 16:35:51:INFO: ! Registration Page::Last Name Required Error::Test Failed - Missing error text
+2025-09-19 16:35:55:INFO: ! Registration Page::Email Required Error::Test Failed - Missing error text
+2025-09-19 16:35:59:INFO: ! Registration Page::Password Required Error::Test Failed - Missing error text
+2025-09-19 16:36:01:INFO: ! Registration Page::Password Length::Test Failed - Missing error text
+2025-09-19 16:36:02:INFO: ! Registration Page::Password Mismatch::Test Failed - Missing error text
+2025-09-19 16:40:04:INFO: ! Registration Page::First Name Required Error::Test Failed - Error text mismatch
+2025-09-19 16:42:54:INFO: * Registration Page::First Name Required Error::Test Passed
+2025-09-19 16:43:33:INFO: ! Registration Page::Last Name Required Error::Test Failed - Missing error text
+2025-09-19 16:44:02:INFO: * Registration Page::Last Name Required Error::Test Passed
+2025-09-19 16:44:49:INFO: ! Registration Page::Email Required Error::Test Failed - Missing error text
+2025-09-19 16:45:06:INFO: ! Registration Page::Email Required Error::Test Failed - Missing error text
+2025-09-19 16:45:39:INFO: ! Registration Page::Email Required Error::Test Failed - Missing error text
+2025-09-19 16:46:14:INFO: * Registration Page::Email Required Error::Test Passed
+2025-09-19 16:47:53:INFO: * Registration Page::Password Required Error::Test Passed
+2025-09-19 16:48:03:INFO: * Registration Page::Email Required Error::Test Passed
+2025-09-19 16:48:22:INFO: ! Registration Page::Password Length::Test Failed - Missing error text
+2025-09-19 16:48:53:INFO: ! Registration Page::Password Length::Test Failed - Missing error text
+2025-09-19 16:49:19:INFO: ! Registration Page::Password Length::Test Failed - Missing error text
+2025-09-19 16:52:17:INFO: ! Registration Page::Password Length::Test Failed - Missing error text
+2025-09-19 16:52:46:INFO: * Registration Page::Password Length::Test Passed
+2025-09-19 16:53:23:INFO: ! Registration Page::Password Mismatch::Test Failed - Missing error text
+2025-09-19 16:57:11:INFO: * Registration Page::Password Length::Test Passed
+2025-09-19 16:58:28:INFO: * Registration Page::Password Mismatch::Test Passed
+2025-09-19 16:59:01:INFO: * Registration Page::Password Mismatch::Test Passed
+2025-09-19 17:09:33:INFO: * User Registration Page::Gender Selection::Test Passed - m
+2025-09-19 17:12:01:INFO: * User Registration Page::Register User Required Fields Only::Test Passed
+2025-09-19 17:12:35:INFO: ! User Registration Page::Register User Required Fields Only::Test Failed - No confirmation text
